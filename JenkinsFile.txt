@@ -6,6 +6,7 @@ pipeline {
                 sh "sudo npm install"
                 sh "sudo npm install @mui/material @emotion/react @emotion/styled"
                 sh "sudo npm install formik --save"
+		sh "sudo npm install axios"
                 sh "sudo npm run build"
             }
         }
