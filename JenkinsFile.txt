@@ -4,6 +4,8 @@ pipeline {
         stage("Build") {
             steps {
                 sh "sudo npm install"
+                sh "sudo npm install @mui/material @emotion/react @emotion/styled"
+                sh "sudo npm install formik --save"
                 sh "sudo npm run build"
             }
         }
