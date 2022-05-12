@@ -12,8 +12,8 @@ pipeline {
         }
         stage("Deploy") {
             steps {
-                sh "sudo rm -rf /var/www/NodeServer"
-                sh "sudo cp -r ${WORKSPACE}/build/ /var/www/NodeServer/"
+                sh "sudo rm -rf /var/www/semana-tec"
+                sh "sudo cp -r ${WORKSPACE}/build/ /var/www/semana-tec/"
             }
         }
     }
