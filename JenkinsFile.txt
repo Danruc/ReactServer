@@ -12,8 +12,8 @@ pipeline {
         }
         stage("Deploy") {
             steps {
-                sh "sudo rm -rf /var/www/semana-tec"
-                sh "sudo cp -r ${WORKSPACE}/build/ /var/www/semana-tec/"
+                sh "sudo rm -rf /var/www/holaMundo"
+                sh "sudo cp -r /var/lib/jenkins/workspace/holaMundo/build/ /var/www/holaMundo/"
             }
         }
     }
