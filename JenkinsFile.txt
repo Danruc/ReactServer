@@ -12,8 +12,8 @@ pipeline {
         }
         stage("Deploy") {
             steps {
-                sh "sudo rm -rf /var/www/holaMundo"
-                sh "sudo cp -r /var/lib/jenkins/workspace/holaMundo/build/ /var/www/holaMundo/"
+                sh "sudo rm -rf /var/www/jenkins-react-app"
+                sh "sudo cp -r /var/lib/jenkins/workspace/holaMundo/build/ /var/www/jenkins-react-app/"
             }
         }
     }
